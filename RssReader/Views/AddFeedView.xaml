@@ -29,6 +29,7 @@
       xmlns:local="using:RssReader.Views"
       xmlns:common="using:RssReader.Common"
       xmlns:controls="using:RssReader.Controls"
+      xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:MUXC="using:Microsoft.UI.Xaml.Controls"
@@ -92,8 +93,7 @@
             <MUXC:ProgressBar Grid.Row="1"
                          Margin="24, 0"
                          IsIndeterminate="True"
-                         Visibility="{x:Bind ViewModel.CurrentFeed.IsLoading, Mode=OneWay, Converter={StaticResource BooleanToVisibilityConverter}}"
-                         Style="{ThemeResource ProgressBarStyle1}" />
+                         Visibility="{x:Bind ViewModel.CurrentFeed.IsLoading, Mode=OneWay, Converter={StaticResource BooleanToVisibilityConverter}}" />
 
             <!--Error message-->
             <Grid Grid.Row="1"

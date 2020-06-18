@@ -74,8 +74,7 @@
                      Visibility="Collapsed"
                      Grid.Column="1"
                      Margin="24,8"
-                     IsIndeterminate="True"
-                     Style="{ThemeResource ProgressBarStyle1}" />
+                     IsIndeterminate="True" />
 
         <WebView x:Name="ArticleWebView"
                  Grid.Column="1"

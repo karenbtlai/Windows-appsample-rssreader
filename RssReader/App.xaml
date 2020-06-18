@@ -30,10 +30,13 @@
              xmlns:local="using:RssReader">
 
     <Application.Resources>
+        
         <!-- Application-specific resources -->
         <ResourceDictionary>
+            
             <common:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
             <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
                 <!-- 
                     Required for WinUI controls and features.
                     See http://aka.ms/winui for more information.
@@ -44,7 +47,6 @@
                     Required by Visual Studio project and item templates
                  -->
                 <ResourceDictionary Source="/Styles/Styles.xaml" />
-
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
